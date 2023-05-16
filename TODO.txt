@@ -1,0 +1,13 @@
+TODO
+======
+write custom function to count comments
+Improve the queries we wrote last time to include:
+- category and author information on each post
+- a count of posts in each category
+- posts with recent comments in the sidebar
+ Add the single post template
+
+
+
+DONE
+======
