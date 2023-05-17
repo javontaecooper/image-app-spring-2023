@@ -21,7 +21,7 @@
 <label for="menu-button" class="burger pseudo button">&#9776;</label>
 
 <div class="menu">
-                       
+       <a href="register-start.php">Sign up</a>                
     <form action="search.php" method="get" class="searchform">
         <input type="search" name="phrase" placeholder="Search">
         <input type="submit" value="search">
