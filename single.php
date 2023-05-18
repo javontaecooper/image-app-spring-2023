@@ -15,8 +15,9 @@ if(isset($_GET['post_id'])){
     }
 }
 // parse the form before the doctype
-require( 'includes/parse-comment.php');
 require( 'includes/header.php' );
+require( 'includes/parse-comment.php');
+
 ?>
 		<main class="content"> 
             <?php //Get all the info about THIS post
@@ -52,7 +53,10 @@ $allow_comments = $row['allow_comments'];
 //load the comments on this post
 require('includes/comments.php');
       if($allow_comments ){
-require('includes/comment-form.php;');
+
+if($allow_comments AND $logged_in_user ){
+    require('includes/comment-form.php;');
+}
       
  }else{
     echo '<h2>Post not found</h2>';
